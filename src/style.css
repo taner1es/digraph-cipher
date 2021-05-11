@@ -1,0 +1,92 @@
+@keyframes popup{
+    0%   {top:-50px; background-color: white;}
+    50%  {background-color: purple;}
+    100% {top:30vh; background-color: orange;}
+}
+@keyframes close_popup_button{
+    0% 	 {background-color: red;}
+    50%  {background-color: orange;}
+    100% {background-color: lightblue;}
+}
+*{
+    width:250px;
+}
+#close_popup{
+    color:black;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 15px;
+    width: 2vw;
+    float:right;
+    animation-name: close_popup_button;
+    animation-duration: 1s;
+    cursor: pointer;
+}
+#error_message{
+    display: none;
+    font-weight: bold;
+    font-size: 2vw;
+    margin-bottom: 150px;
+    border-radius:15px;
+    padding:5px;
+    text-align: center;
+    background-color: blue;
+    position: absolute;
+    border:2px red solid;
+    left:5vw;
+    top:30vh;
+    width: 25vw;
+    z-index: 15;
+    animation-name: popup;
+    animation-duration: 1s; 
+    box-shadow: white 0px 0px 40px 10px;
+}
+#my_div{
+    margin-left: 35vw;
+    font-family: lucida console,monospace;
+    background-color: grey;
+    margin-top: 2%;  
+    width: 50vw; 
+    height: 90vh; 
+    box-shadow: 0px 0px 100px 20px; 
+    border: 3px lightblue solid;
+    border-radius: 50px;
+}
+textarea,h1,p,input,button{
+    width: 20vw;
+}
+textarea{
+
+    font-weight: bold;
+    font-size: 2vh;
+    outline: none;
+    border: black 1vw solid;
+    border-radius: 15px;
+    background-color: black;
+    color:lime;
+    resize: none;
+    width: 85%;
+
+}
+h1{
+    font-size: 4vh;
+}
+#my_div > p{
+    font-size: 3vh;
+}
+input{
+    cursor: pointer;
+    font-family: lucida console,monospace;
+    margin-top: 5vh;
+    font-weight: bold;
+    color:orange;
+    background-color: black;
+    border: 2px black solid;
+    border-radius: 5px;
+    font-size:3vh;
+    width: 9vw;
+}
+input:hover{
+    color:black;
+    background-color: lime;
+}
